@@ -432,7 +432,7 @@ function icon_map() {
     icon_result=":whats_app:"
     ;;
   "Microsoft Outlook")
-    icon_result=":mail:"
+    icon_result=":microsoft_outlook:"
     ;;
   "Postman")
     icon_result=":airmail:"
