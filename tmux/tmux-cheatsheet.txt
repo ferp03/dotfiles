@@ -1,0 +1,39 @@
+# Sesiones
+
+| Acción | Comando |
+|------|------|
+| Crear sesión | `tmux` |
+| Listar sesiones | `tmux ls` |
+| Conectarse a sesión | `tmux attach -t NOMBRE` |
+| Cambiar de sesión (dentro de tmux) | `Ctrl+a  s` |
+| Detach (salir sin cerrar) | `Ctrl+a  d` |
+| Cerrar sesión | `tmux kill-session -t NOMBRE` |
+| Cerrar todas | `tmux kill-server` |
+
+---
+
+# Ventanas (Windows)
+
+| Acción | Comando |
+|------|------|
+| Nueva ventana | `Ctrl+a  c` |
+| Siguiente ventana | `Ctrl+a  n` |
+| Ventana anterior | `Ctrl+a  p` |
+| Cambiar por número | `Ctrl+a  0..9` |
+| Lista de ventanas | `Ctrl+a  w` |
+| Renombrar ventana | `Ctrl+a  ,` |
+| Cerrar ventana | `Ctrl+a  &` |
+
+---
+
+# Panes (Splits)
+
+| Acción | Comando |
+|------|------|
+| Split vertical | `Ctrl+a  %` |
+| Split horizontal | `Ctrl+a  "` |
+| Moverse entre panes | `Ctrl+a  ← ↑ ↓ →` |
+| Lista de panes | `Ctrl+a  q` |
+| Cerrar pane | `Ctrl+a  x` |
+
+---
