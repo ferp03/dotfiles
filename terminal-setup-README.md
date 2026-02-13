@@ -51,6 +51,45 @@ Personal terminal stack:
 
 ------------------------------------------------------------------------
 
+# 🪟 AeroSpace (tiling en macOS)
+
+Gestor de ventanas en mosaico para macOS.
+
+## Comandos CLI básicos
+
+| Action                         | Command                           |
+|--------------------------------|-----------------------------------|
+| Mostrar ayuda                  | `aerospace --help`                |
+| Listar workspaces              | `aerospace list-workspaces --all` |
+| Ir a workspace                 | `aerospace workspace 1`           |
+| Mover ventana a workspace      | `aerospace move-node-to-workspace 2` |
+| Listar ventanas actuales       | `aerospace list-windows --all`    |
+| Foco a siguiente ventana       | `aerospace focus dfs-next`        |
+| Foco a ventana previa          | `aerospace focus dfs-prev`        |
+| Cerrar ventana enfocada        | `aerospace close`                 |
+| Cambiar layout tiling/floating | `aerospace layout tiling` / `aerospace layout floating` |
+| Recargar configuración         | `aerospace reload-config`         |
+
+## Flujo rápido para practicar
+
+``` bash
+# 1) Ver tus workspaces
+aerospace list-workspaces --all
+
+# 2) Cambiar al workspace 1
+aerospace workspace 1
+
+# 3) Mover la ventana actual al workspace 2
+aerospace move-node-to-workspace 2
+
+# 4) Volver a cargar config al editarla
+aerospace reload-config
+```
+
+Tip: normalmente estos comandos se usan detrás de atajos de teclado en tu archivo de configuración de AeroSpace.
+
+------------------------------------------------------------------------
+
 # 🔎 ripgrep (rg)
 
 Fast recursive search (better grep).
