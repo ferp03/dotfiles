@@ -17,9 +17,9 @@ function icon_map() {
   "Ghostty")
     icon_result=":ghostty:"
     ;;
-    "Codex")
+  "Codex")
     icon_result=":openai:"
-    ;:
+    ;;
   "Microsoft To Do" | "Things")
     icon_result=":things:"
     ;;
@@ -146,7 +146,7 @@ function icon_map() {
   "Jellyfin Media Player")
     icon_result=":jellyfin:"
     ;;
-  "Code" | "Code - Insiders" | "Codex")
+  "Code" | "Code - Insiders")
     icon_result=":code:"
     ;;
   "Linear")
