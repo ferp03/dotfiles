@@ -1,0 +1,71 @@
+#################################
+# OS
+#################################
+.DS_Store
+.AppleDouble
+.LSOverride
+
+#################################
+# Logs
+#################################
+*.log
+
+#################################
+# Editors / IDE
+#################################
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+#################################
+# Node / package managers
+#################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+#################################
+# Python
+#################################
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+#################################
+# tmux plugins (IMPORTANT)
+#################################
+tmux/plugins/
+
+#################################
+# Neovim plugins / package managers
+#################################
+nvim/lazy-lock.json
+nvim/.cache/
+nvim/plugin/packer_compiled.lua
+
+#################################
+# Sketchybar runtime files
+#################################
+sketchybar/cache/
+sketchybar/logs/
+
+#################################
+# Raycast generated / runtime
+#################################
+raycast/cache/
+
+#################################
+# Secrets (just in case)
+#################################
+*.pem
+*.key
+.env
+.env.local
+
+###########################
