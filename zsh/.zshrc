@@ -22,9 +22,13 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 #config
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd cd)" # tmb incluye el alias para cd
+#abrir tmux siempre
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   tmux attach -t 0 || tmux new -s 0
 fi
+# nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 
 # aliases

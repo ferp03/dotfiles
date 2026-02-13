@@ -55,38 +55,43 @@ Personal terminal stack:
 
 Gestor de ventanas en mosaico para macOS.
 
-## Comandos CLI básicos
+## Atajos de teclado (config por defecto)
 
-| Action                         | Command                           |
-|--------------------------------|-----------------------------------|
-| Mostrar ayuda                  | `aerospace --help`                |
-| Listar workspaces              | `aerospace list-workspaces --all` |
-| Ir a workspace                 | `aerospace workspace 1`           |
-| Mover ventana a workspace      | `aerospace move-node-to-workspace 2` |
-| Listar ventanas actuales       | `aerospace list-windows --all`    |
-| Foco a siguiente ventana       | `aerospace focus dfs-next`        |
-| Foco a ventana previa          | `aerospace focus dfs-prev`        |
-| Cerrar ventana enfocada        | `aerospace close`                 |
-| Cambiar layout tiling/floating | `aerospace layout tiling` / `aerospace layout floating` |
-| Recargar configuración         | `aerospace reload-config`         |
+> Nota: AeroSpace no trae "atajos globales fijos"; los defines en `~/.aerospace.toml`.  
+> Esta guía usa el esquema más común del `default-config` (`alt` como modificador principal).
 
-## Flujo rápido para practicar
+| Acción | Atajo |
+|--------|-------|
+| Enfocar ventana izquierda/abajo/arriba/derecha | `alt + h/j/k/l` |
+| Mover ventana izquierda/abajo/arriba/derecha | `alt + shift + h/j/k/l` |
+| Cambiar layout tiles | `alt + /` |
+| Cambiar layout accordion | `alt + ,` |
+| Redimensionar ventana (menos/más) | `alt + -` / `alt + =` |
+| Ir a workspace 1..9 | `alt + 1..9` |
+| Mover ventana a workspace 1..9 | `alt + shift + 1..9` |
+| Ir a workspace por letra (A..Z) | `alt + letra` |
+| Mover ventana a workspace por letra | `alt + shift + letra` |
+| Workspace anterior/actual (toggle) | `alt + tab` |
+| Mover workspace al monitor siguiente | `alt + shift + tab` |
+| Entrar a modo service | `alt + shift + ;` |
 
-``` bash
-# 1) Ver tus workspaces
-aerospace list-workspaces --all
+## Modo service (después de `alt + shift + ;`)
 
-# 2) Cambiar al workspace 1
-aerospace workspace 1
+| Acción | Atajo |
+|--------|-------|
+| Recargar config y volver a modo main | `esc` |
+| Resetear layout (flatten) y volver | `r` |
+| Toggle floating/tiling y volver | `f` |
+| Cerrar todas menos la ventana actual y volver | `backspace` |
+| Join con izquierda/abajo/arriba/derecha y volver | `alt + shift + h/j/k/l` |
 
-# 3) Mover la ventana actual al workspace 2
-aerospace move-node-to-workspace 2
+## Flujo rápido para practicar (solo teclado)
 
-# 4) Volver a cargar config al editarla
-aerospace reload-config
-```
-
-Tip: normalmente estos comandos se usan detrás de atajos de teclado en tu archivo de configuración de AeroSpace.
+1. Abre 2-3 apps y muévete entre ventanas con `alt + h/j/k/l`.
+2. Mueve una ventana con `alt + shift + h/j/k/l`.
+3. Cambia de workspace con `alt + 1`, `alt + 2`, etc.
+4. Envía la ventana actual a otro workspace con `alt + shift + 2`.
+5. Entra a `service mode` con `alt + shift + ;` y prueba `f` y `r`.
 
 ------------------------------------------------------------------------
 
