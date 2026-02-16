@@ -435,7 +435,10 @@ function icon_map() {
     icon_result=":microsoft_outlook:"
     ;;
   "Postman")
-    icon_result=":airmail:"
+    icon_result=":postman:"
+    ;;
+  "Claude")
+    icon_result=":claude:"
     ;;
   *)
     icon_result=":default:"
