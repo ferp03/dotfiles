@@ -69,3 +69,6 @@ raycast/cache/
 .env.local
 
 ###########################
+# RAYCAST
+###########################
+raycast/*
