@@ -33,7 +33,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # aliases
 alias cl="clear"
-alias ls="eza"
+alias ls="eza --icons"
+alias ll="eza -la --icons --git"
+alias lt="eza --tree --level=2 --icons"
 alias cat="bat"
 
 # --- Git aliases ---
