@@ -1,6 +1,7 @@
 # Exports
 export PATH="/opt/homebrew/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/.bun/bin:$PATH"
 
 
 # Theme
@@ -21,7 +22,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 #config
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh --cmd cd)" # tmb incluye el alias para cd
+
 #abrir tmux siempre
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 #   tmux attach -t 0 || tmux new -s 0
@@ -56,3 +57,6 @@ alias grh="git reset --hard"
 alias gst="git stash"
 alias gstp="git stash pop"
 alias grpr="git remote prune origin"
+
+
+eval "$(zoxide init zsh --cmd cd)" # tmb incluye el alias para cd
