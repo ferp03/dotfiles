@@ -59,4 +59,5 @@ alias gstp="git stash pop"
 alias grpr="git remote prune origin"
 
 
+export _ZO_DOCTOR=0 # evita el warning de zoxide en shells sin chpwd hook (ej. Claude Code)
 eval "$(zoxide init zsh --cmd cd)" # tmb incluye el alias para cd
